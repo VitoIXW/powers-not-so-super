@@ -16,7 +16,25 @@ A lightweight personal toolkit for working with Codex using specialized roles, s
 
 - `AGENTS.md`: global rules for all agents
 - `roles/`: role definitions
-- `tasks/`: shared artifacts and reports produced by agents
+- `tasks/`: runtime artifacts and reports produced by agents (ignored by git in this repo)
+
+## Submodule setup (recommended)
+
+Use this repository as a submodule named `.powers` inside each target project:
+
+```bash
+git submodule add <THIS_REPO_URL> .powers
+git submodule update --init --recursive
+```
+
+Then run agents from the target project root and keep all coordination files under:
+
+```bash
+.powers/tasks/
+```
+
+This avoids cross-project collisions because each project has its own `.powers` working tree.
+The `tasks/` folder is intentionally ignored in this repository, so generated artifacts do not pollute normal commits.
 
 ## Basic usage example
 
