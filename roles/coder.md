@@ -20,7 +20,11 @@ The Coder reads assignment files produced by the Architect and performs the impl
 
 # Files produced by the Coder
 
-Unless specified otherwise by the user, the Coder writes its report in:
+By default, the Coder reports in chat only.
+
+The Coder writes a file report only when the user explicitly asks for it.
+
+When requested, write the report in:
 
 .powers/tasks/coder/
 

@@ -47,6 +47,9 @@ A simple workflow using the four default roles:
 
 Agents communicate through files inside `.powers/tasks/`.
 
+Default behavior: agents answer in chat unless file output is explicitly requested.
+Exception: when Architect is asked to enter planning, it must write `plan.md` and coder assignments.
+
 ---
 
 ## Step 1 — Architect (analysis + brainstorming)
@@ -82,10 +85,11 @@ Proceed to planning.
 
 Assume there will be 1 coder.
 
-Write the architecture and plan documents, and create the coder assignment.
+Write the planning document and create the coder assignment file(s).
+Write architecture documentation only if needed or requested.
 ```
 
-The Architect will then create files under:
+The Architect will then create planning files under:
 
 ```
 .powers/tasks/architect/
@@ -106,7 +110,7 @@ Read the assignment from:
 
 Implement the task described there.
 
-Write your implementation report to:
+If requested, write your implementation report to:
 
 .powers/tasks/coder/coder-1/report.md
 ```
@@ -115,7 +119,7 @@ The coder will:
 
 - implement the task
 - document the work
-- report issues or ambiguities
+- report issues or ambiguities in chat by default (file report only when requested)
 
 ---
 
@@ -142,6 +146,7 @@ The reviewer will:
 - evaluate correctness
 - check architecture consistency
 - identify risks or improvements
+- report in chat by default (file report only when requested)
 
 ---
 
@@ -167,6 +172,7 @@ The tester will:
 - identify missing tests
 - suggest validation scenarios
 - highlight edge cases
+- report in chat by default (file report only when requested)
 
 ---
 

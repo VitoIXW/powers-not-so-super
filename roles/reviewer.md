@@ -20,7 +20,11 @@ The focus is on correctness, maintainability, and architectural consistency.
 
 # Files produced by the Reviewer
 
-Unless specified otherwise by the user, the Reviewer writes the review in:
+By default, the Reviewer reports in chat only.
+
+The Reviewer writes a file report only when the user explicitly asks for it.
+
+When requested, write the review in:
 
 .powers/tasks/reviewer/review.md
 

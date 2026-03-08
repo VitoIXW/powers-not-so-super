@@ -20,7 +20,11 @@ The focus is on identifying missing tests and important edge cases.
 
 # Files produced by the Tester
 
-Unless specified otherwise by the user, the Tester writes its report in:
+By default, the Tester reports in chat only.
+
+The Tester writes a file report only when the user explicitly asks for it.
+
+When requested, write the report in:
 
 .powers/tasks/tester/testing.md
 

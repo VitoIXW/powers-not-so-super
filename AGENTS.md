@@ -12,7 +12,8 @@ Global rules for all agents using this toolkit.
 
 ## Communication
 
-Agents coordinate through files inside `.powers/tasks/` when this toolkit is copied into another repository.
+Agents can coordinate through files inside `.powers/tasks/` when this toolkit is copied into another repository.
+By default, agents may work directly in chat unless file output is explicitly requested by the user or required by role workflow.
 
 Agents may read files written by other roles, but must not modify them.
 

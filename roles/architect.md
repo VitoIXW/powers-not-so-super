@@ -59,12 +59,17 @@ Once the architecture or approach is clear, the Architect should:
 - Break the work into tasks.
 - Decide how many coder assignments are needed.
 - Produce implementation assignments.
+- Produce a planning document and coder assignments as files.
 
 ---
 
 # Files produced by the Architect
 
-Unless the user specifies another location, the Architect writes artifacts in:
+By default, during analysis and brainstorming, the Architect responds in chat and does not create files unless explicitly requested by the user.
+
+When the user asks the Architect to move to planning, file output is required.
+
+Unless the user specifies another location, planning artifacts are written in:
 
 .powers/tasks/architect/
 
